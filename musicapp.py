@@ -3,6 +3,9 @@ import streamlit as st
 import requests
 import pandas as pd
 
+# ✅ Move this to the top before any other Streamlit command
+st.set_page_config(page_title="🎶 MelodyMind - AI Music Recommender", layout="wide")
+
 # Fetch API Key securely
 API_KEY = os.getenv("LASTFM_API_KEY")  # Fetch from system environment
 
@@ -35,9 +38,6 @@ def get_recommendations(track, artist):
         ]
     return []
 
-# Streamlit App UI
-st.set_page_config(page_title="🎶 MelodyMind - AI Music Recommender", layout="wide")
-
 st.title("🎵 MelodyMind - AI-Powered Music Recommendation System")
 st.markdown("#### *Discover personalized music recommendations based on your unique taste!* 🎧✨")
 
@@ -61,4 +61,3 @@ if st.button("🔍 Get Recommendations"):
             st.warning("❌ *Oops! No recommendations found. Try a different song or artist.* 😢")
 
 st.markdown("✨MelodyMind – Your ears will thank you later!🎧")
-
