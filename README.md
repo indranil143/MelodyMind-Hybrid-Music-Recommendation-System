@@ -13,8 +13,7 @@
 2️⃣ **Real-Time API-Based Recommendation (Last.fm API + Streamlit)** – Fetches similar songs dynamically based on user input.  
 
 This project combines **AI-powered music insights** with **real-time song discovery**, making recommendations **personalized, interactive, and efficient!**  
-
-🚀 **MelodyMind** uses the **Last.fm API** to suggest similar tracks based on your favorite songs and artists. Whether you're in the mood for relaxing lo-fi, energetic rock, or smooth jazz, this AI-powered recommender will help you explore new music effortlessly.  
+ 
 ---  
 
 ## 🔥 **Key Features**  
