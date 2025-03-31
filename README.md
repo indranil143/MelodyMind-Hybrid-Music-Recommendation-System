@@ -40,3 +40,6 @@ The project utilizes the **Spotify dataset**, including:
 
 ## 🤝 Contributing
 Feel free to fork, experiment, and contribute! If you have suggestions, **open an issue** or **submit a pull request**.
+
+## License
+This project is licensed under the **MIT License**. See the LICENSE file for more information.
