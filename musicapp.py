@@ -1,10 +1,14 @@
-import streamlit as st
+import os
+import streamlit as st 
 import requests
 import pandas as pd
-import os
 
-# Fetch API Key from Streamlit Secrets
-API_KEY = st.secrets["LASTFM_API_KEY"]
+# Fetch API Key securely
+API_KEY = os.getenv("LASTFM_API_KEY")  # Fetch from system environment
+
+if not API_KEY:
+    st.error("⚠️ API Key is missing! Make sure it's set correctly.")
+
 BASE_URL = "http://ws.audioscrobbler.com/2.0/"
 
 # Function to get song recommendations
