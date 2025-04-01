@@ -4,7 +4,7 @@ import requests
 import pandas as pd
 from rapidfuzz import process  # For fuzzy matching
 
-# ✅ Move this to the top before any other Streamlit command
+#  Move this to the top before any other Streamlit command
 st.set_page_config(page_title="🎶 MelodyMind - AI Music Recommender", layout="wide")
 
 # Fetch API Key securely
@@ -15,11 +15,21 @@ if not API_KEY:
 
 BASE_URL = "http://ws.audioscrobbler.com/2.0/"
 
+#  Function to correct spelling mistakes
 def correct_spelling(query, choices):
     """Use fuzzy matching to correct user input."""
-    match, score = process.extractOne(query, choices)
-    return match if score > 80 else query  # Only correct if confidence is high
+    result = process.extractOne(query, choices)
+    
+    # Ensure the result is a tuple and contains at least two elements (match and score)
+    if result and isinstance(result, tuple) and len(result) == 2:
+        match, score = result
+        return match if score > 80 else query  # Only correct if confidence is high
+    
+    # If no match found or confidence is too low, return the original query
+    return query
 
+# Fetch top tracks for better recommendations
+@st.cache_data
 def get_top_tracks():
     """Fetch a list of popular songs to use for fuzzy matching."""
     params = {
@@ -31,6 +41,7 @@ def get_top_tracks():
     response = requests.get(BASE_URL, params=params).json()
     return [track['name'] for track in response.get("tracks", {}).get("track", [])]
 
+# Fetch song recommendations
 def get_recommendations(track, artist):
     params = {
         "method": "track.getSimilar",
@@ -54,21 +65,25 @@ def get_recommendations(track, artist):
         ]
     return []
 
+# 🎶 App UI
 st.title("🎵 MelodyMind - AI-Powered Music Recommendation System")
 st.markdown("#### *Discover personalized music recommendations based on your unique taste!* 🎧✨")
 
 # Load popular songs for fuzzy matching
 popular_tracks = get_top_tracks()
 
-# Input fields
+# 🎧 User Inputs
 song = st.text_input("🎧 *Enter a Song Name:*", "Shape of You")
 artist = st.text_input("🎤 *Enter the Artist Name:*", "Ed Sheeran")
 
-# Auto-correct spelling mistakes
+#  Auto-correct spelling mistakes
 if popular_tracks:
-    song = correct_spelling(song, popular_tracks)
+    corrected_song = correct_spelling(song, popular_tracks)
+    if corrected_song != song:
+        st.info(f"🔍 Did you mean **{corrected_song}**? Using corrected name for better recommendations!")
+        song = corrected_song
 
-# Fetch recommendations
+# 🔍 Fetch recommendations
 if st.button("🔍 Get Recommendations"):
     with st.spinner("*Finding the best songs for you...* 🎼"):
         results = get_recommendations(song, artist)
@@ -77,7 +92,7 @@ if st.button("🔍 Get Recommendations"):
             df = pd.DataFrame(results)
             st.dataframe(df, use_container_width=True)  # Responsive table
             
-            # Interactive like button
+            # 👍 Like Button for User Interaction
             if st.button("👍 Love These Picks! 💚"):
                 st.success("*Glad you liked it! Keep vibing!* 🎶")
         else:
