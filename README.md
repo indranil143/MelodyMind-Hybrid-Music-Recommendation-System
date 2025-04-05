@@ -10,9 +10,8 @@
 **MelodyMind** is an advanced **AI-driven music recommendation system** offering two powerful approaches:  
 
 1️⃣ **Data-Driven Clustering Model (Spotify Audio Features + KMeans)** – Uses **machine learning** to analyze songs based on key audio characteristics.
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/indranil143/MelodyMind-AI-Powered-Music-Recommender-System/blob/main/Music_Recommendation_System.ipynb)
 2️⃣ **Real-Time API-Based Recommendation (Last.fm API + Streamlit)** – Fetches similar songs dynamically based on user input.  
-[MelodyMind - AI Music Recommender](https://melodymind-ai-powered-music-recommender-system-uvbgwng5xjx2tg3.streamlit.app/)  
+
 This project combines **AI-powered music insights** with **real-time song discovery**, making recommendations **personalized, interactive, and efficient!**  
  
 ---  
