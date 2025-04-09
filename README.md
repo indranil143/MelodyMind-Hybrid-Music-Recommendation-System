@@ -1,5 +1,5 @@
 # 🎼 **MelodyMind: Music Recommendation System** 🎵🎧  
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/indranil143/MelodyMind-AI-Powered-Music-Recommender-System/blob/main/Music_Recommendation_System.ipynb)
+👉 [MelodyMind](https://melodymind-ai-powered-music-recommender-system-uvbgwng5xjx2tg3.streamlit.app/) 
 
 <p align="center">
   <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Spotify_logo_with_text.svg/1920px-Spotify_logo_with_text.svg.png" alt="Spotify Logo" width="100"/>
