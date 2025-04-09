@@ -14,6 +14,7 @@
 **MelodyMind** is an advanced **AI-driven music recommendation system** offering two powerful approaches:  
 
 1️⃣ **Data-Driven Clustering Model (Spotify Audio Features + KMeans)** – Uses **machine learning** to analyze songs based on key audio characteristics.
+
 2️⃣ **Real-Time API-Based Recommendation (Last.fm API + Streamlit)** – Fetches similar songs dynamically based on user input.  
 
 This project combines **machine learning** with **real-time song discovery**, delivering **personalized, interactive, and efficient music recommendations**. 
@@ -21,11 +22,11 @@ This project combines **machine learning** with **real-time song discovery**, de
 ---  
 
 ## 🔥 **Key Features**  
-✅ **ML-Based Song Clustering** – Groups songs based on **danceability, energy, tempo**, etc. using **KMeans clustering**.  
-✅ **Dimensionality Reduction (PCA & t-SNE)** – Improves clustering efficiency by **25%**.
-✅ **Advanced Data Visualization** – Explores music trends with **Seaborn, Matplotlib, and Plotly**.
-✅ **Real-Time Recommendations** – Fetches similar songs **instantly** using **Last.fm API**.   
-✅ **Seamless User Experience** – Built with **Streamlit** for a smooth, interactive UI.
+✅ **ML-Based Song Clustering** – Groups songs based on **danceability, energy, tempo**, and more using **KMeans**.  
+✅ **Dimensionality Reduction (PCA & t-SNE)** – Boosts clustering performance by **25%**.  
+✅ **Advanced Data Visualizations** – Created with **Seaborn, Matplotlib, and Plotly**.  
+✅ **Real-Time Music Recommendations** – Instantly suggests songs via the **Last.fm API**.  
+✅ **Streamlit-Powered UI** – Smooth, fast, and interactive web experience.  
 ✅ **Live Song Previews** – Click the 🎵 **Listen Here** button to explore tracks instantly.
 
 ---
