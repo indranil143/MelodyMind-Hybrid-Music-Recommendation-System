@@ -11,10 +11,9 @@
 ---
 
 ## 🚀 **Project Overview** 
-**MelodyMind** is an advanced **AI-driven music recommendation system** offering two powerful approaches:  
+**MelodyMind** is a simple **AI-driven music recommendation system** offering two different approaches:  
 
 1️⃣ **Data-Driven Clustering Model (Spotify Audio Features + KMeans)** – Uses **machine learning** to analyze songs based on key audio characteristics.
-
 2️⃣ **Real-Time API-Based Recommendation (Last.fm API + Streamlit)** – Fetches similar songs dynamically based on user input.  
 
 This project combines **machine learning** with **real-time song discovery**, delivering **personalized, interactive, and efficient music recommendations**. 
