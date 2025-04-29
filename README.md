@@ -1,4 +1,4 @@
-# 🎼 **MelodyMind: Music Recommendation System** 🎵🎧  
+# 🎼 **MelodyMind: Hybrid Music Recommendation System** 🎵🎧  
 👉 [MelodyMind](https://melodymind-ai-powered-music-recommender-system-uvbgwng5xjx2tg3.streamlit.app/) 
 
 <p align="center">
