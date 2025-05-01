@@ -55,7 +55,7 @@ Follow these steps to get the project up and running on your local machine.
 
 Uses the Spotify Dataset 1921-2020, 160k+ Tracks (`data.csv`).
 **Source:** [https://www.kaggle.com/datasets/fcpercival/160k-spotify-songs-sorted](https://www.kaggle.com/datasets/fcpercival/160k-spotify-songs-sorted)
-Ensure `data.csv` is accessible by the notebook.
+Ensure `data.csv` or renamed as `music_data.csv` is accessible by the notebook.
 
 ### Running the Notebook
 
