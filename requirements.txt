@@ -3,4 +3,4 @@ numpy>=1.22
 scipy>=1.10
 scikit-learn>=1.2
 pandas
-lightfm==1.17.1
+lightfm==1.17
