@@ -5,7 +5,4 @@ scikit-learn>=1.2
 requests
 pandas
 lightfm==1.16
-<<<<<<< HEAD
-=======
 rapidfuzz
->>>>>>> 0ec6d0d1646eadddd33d7e80ecb50d630c4846e5
