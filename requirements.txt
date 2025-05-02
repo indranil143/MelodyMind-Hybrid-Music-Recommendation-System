@@ -2,7 +2,5 @@ streamlit==1.45.0
 numpy>=1.22
 scipy>=1.10
 scikit-learn>=1.2
-requests
 pandas
-lightfm==1.16
-rapidfuzz
+lightfm==1.17.1
