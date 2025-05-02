@@ -5,4 +5,3 @@ scikit-learn>=1.2
 requests
 pandas
 lightfm==1.16
-rapidfuzz

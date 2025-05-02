@@ -1,0 +1,6 @@
+streamlit
+numpy
+scipy
+requests
+pandas
+rapidfuzz
