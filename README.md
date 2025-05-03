@@ -12,25 +12,25 @@ This project implements a **Hybrid Music Recommendation System** combining **Con
 
 ## ✨ Features
 
-* **Hybrid Approach:** Combines Content-Based and Collaborative Filtering for potentially more accurate and diverse recommendations.
+* **Hybrid Approach:** Combines Content-Based and Collaborative Filtering.
 * **Content-Based Filtering:** Recommends songs based on audio features (danceability, energy, etc.) using cosine similarity.
 * **Collaborative Filtering:** Utilizes the LightFM library to learn user (artist) and item (track) embeddings from interaction data.
 * **Simulated User Interactions:** Demonstrates collaborative filtering using artist-track associations as implicit feedback.
 * **Streamlit Web App:** Provides an interactive web interface to get recommendations.
-* **Modular Design:** Project components are separated (data loading/cleaning/training in a notebook, deployment in a separate script 'music_app.py').
+* **Modular Design:** Separated data processing and deployment ('music_app.py').
 
 ## 💡 Concepts Explained
 
-* **Content-Based Filtering:** Imagine recommending songs that *sound* similar to what you already like. This method analyzes the characteristics (features) of items (songs) and suggests others with similar characteristics.
-* **Collaborative Filtering:** This method looks at the behavior of many users. If User A and User B like similar songs, and User A likes a song that User B hasn't heard, Collaborative Filtering might recommend that song to User B. It finds patterns in user-item interactions.
-* **Hybrid System:** By combining Content-Based and Collaborative Filtering, the system can overcome limitations of each method. For example, it can recommend new or niche songs (Content-Based) and also leverage the collective intelligence of users (Collaborative Filtering).
+- **Content-Based Filtering:** Imagine recommending songs that *sound* similar to what you already like. This method analyzes the characteristics (features) of items (songs) and suggests others with similar characteristics.
+- **Collaborative Filtering:** This method looks at the behavior of many users. If User A and User B like similar songs, and User A likes a song that User B hasn't heard, Collaborative Filtering might recommend that song to User B. It finds patterns in user-item interactions.
+- **Hybrid System:** Combines both methods to recommend new, niche songs (Content-Based) while leveraging user patterns (Collaborative Filtering) for enhanced accuracy.
 
 ## 🚀 Getting Started
 Follow these steps to get the project up and running on your local machine.
 
 ### Prerequisites
 
-* Python 3.7+
+* Python 3.8+
 * Git
 
 ### Installation
