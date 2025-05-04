@@ -59,7 +59,7 @@ Ensure `data.csv` or renamed as `music_data.csv` is accessible by the notebook.
 
 ### Running the Notebook
 
-Execute the cells in `notebook/Hybrid_Music_Recommendation_System.ipynb` using Kaggle or Google Colab. This trains the model and saves `music_recommender_components.pkl`.
+Execute the cells in `MelodyMind_Hybrid_Music_Recommendation_System.ipynb` using Kaggle or Google Colab. This trains the model and saves `music_recommender_components.pkl`.
 
 ### Running the Streamlit App
 
