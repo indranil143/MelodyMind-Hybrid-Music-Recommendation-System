@@ -13,7 +13,7 @@ This project implements a **Hybrid Music Recommendation System** combining **Con
 ## ✨ Features
 
 * **Hybrid Approach:** Combines Content-Based and Collaborative Filtering.
-* **Content-Based Filtering:** Recommends songs based on audio features (danceability, energy, etc.) using cosine similarity.
+* **Content-Based Filtering:** Recommends songs based on audio features (danceability, instrumentalness, tempo, energy, etc.) using cosine similarity.
 * **Collaborative Filtering:** Utilizes the LightFM library to learn user (artist) and item (track) embeddings from interaction data.
 * **Simulated User Interactions:** Demonstrates collaborative filtering using artist-track associations as implicit feedback.
 * **Streamlit Web App:** Provides an interactive web interface to get recommendations.
