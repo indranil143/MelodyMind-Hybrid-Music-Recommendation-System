@@ -30,7 +30,7 @@ Follow these steps to get the project up and running on your local machine.
 
 ### Prerequisites
 
-* Python 3.8+
+* Python 3.9+
 * Git
 
 ### Installation
