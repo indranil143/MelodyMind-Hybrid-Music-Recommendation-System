@@ -39,7 +39,7 @@ Follow these steps to get the project up and running on your local machine.
 
 1.  Clone the repository:
     ```bash
-    git clone https://github.com/indranil143/MelodyMind-Hybrid-Music-Recommendation-System.git
+    git clone https://github.com/indranil143/Hybrid-Music-Recommendation-System.git
     cd MelodyMind-Hybrid-Music-Recommendation-System
     ```
 2.  Create and activate a virtual environment:
