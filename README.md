@@ -1,6 +1,6 @@
 # **MelodyMind: Hybrid Music Recommendation System** 🎧  
 
-Welcome to the MelodyMind project repository! 
+Welcome to the MelodyMind project repository!! 
 
 [![Python](https://img.shields.io/badge/Python-3.7%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
 [![LightFM](https://img.shields.io/badge/Library-LightFM-orange?style=flat-square)](https://makingunconferenc.es/lightfm/)
