@@ -4,7 +4,7 @@ import numpy as np
 import pickle
 from sklearn.metrics.pairwise import cosine_similarity
 
-# --- Page Configuration ---
+#  Page Configuration 
 st.set_page_config(
     page_title="MelodyMind: Hybrid Music Recommender",
     page_icon="🎵",
@@ -12,7 +12,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# --- Load Saved Components ---
+#  Load Saved Components 
 @st.cache_resource
 def load_components(filepath='music_recommender_components.pkl'):
     """Loads the saved model components."""
@@ -44,15 +44,12 @@ idx_to_artist_name = components['idx_to_artist_name']
 
 num_items = len(original_item_id_map)
 
-# --- Helper Functions (Adapted from Notebook) ---
+#  Helper Functions (Adapted from Notebook) 
 
-# ✅ Corrected: Now returns num_recommendations * 2 items
+
 def get_content_recommendations(track_name, all_features, data_df, idx_to_track, idx_to_artist, num_recommendations=10):
-    """
-    Generates song recommendations based on content similarity, calculating
-    similarity on-demand using scaled features.
-    Returns a larger list (num_recommendations * 2) for hybrid combining.
-    """
+# Generates song recommendations based on content similarity, calculating similarity on-demand using scaled features. Returns a larger list (num_recommendations * 2) for hybrid combining.
+    
     matching_indices = data_df[data_df['track_name'] == track_name].index
     if not matching_indices.any(): return []
 
@@ -67,7 +64,7 @@ def get_content_recommendations(track_name, all_features, data_df, idx_to_track,
     # Get top N similar songs (exclude the track itself)
     try:
         input_track_sim_index = [i[0] for i in sim_scores].index(idx)
-        # ✅ Corrected slicing: Get num_recommendations * 2 items
+        
         top_indices = [i[0] for i in sim_scores if i[0] != idx][:num_recommendations * 2]
     except ValueError:
          # Fallback slicing
@@ -77,12 +74,10 @@ def get_content_recommendations(track_name, all_features, data_df, idx_to_track,
     return [(idx_to_track.get(i, 'Unknown'), idx_to_artist.get(i, 'Unknown')) for i in top_indices]
 
 
-# ✅ Corrected: Now returns num_recommendations * 2 items
+
 def get_lightfm_recommendations(user_id, model, num_recommendations=10):
-    """
-    Generates recommendations for a given user_id using a trained LightFM model.
-    Returns a larger list (num_recommendations * 2) for hybrid combining.
-    """
+# Generates recommendations for a given user_id using a trained LightFM model. Returns a larger list (num_recommendations * 2) for hybrid combining.
+
     lightfm_user_id_map = components['lightfm_user_id_map']
 
     if user_id not in lightfm_user_id_map:
@@ -95,7 +90,7 @@ def get_lightfm_recommendations(user_id, model, num_recommendations=10):
     scores = model.predict(internal_user_id, all_item_indices)
 
     # Get top N item indices based on scores
-    # ✅ Corrected slicing: Get num_recommendations * 2 items
+    
     top_internal_item_indices = np.argsort(-scores)[:num_recommendations * 2]
 
     # Map internal item indices back to original item IDs
@@ -108,10 +103,8 @@ def get_lightfm_recommendations(user_id, model, num_recommendations=10):
 
 # This function's logic was already correct for combining and slicing the final output
 def hybrid_recommendation(user_id, reference_track_name, num_recommendations=10):
-    """
-    Generates hybrid recommendations combining content-based and collaborative filtering.
-    Combines results from larger lists and returns the top N unique recommendations.
-    """
+# Generates hybrid recommendations combining content-based and collaborative filtering. Combines results from larger lists and returns the top N unique recommendations.
+
     st.info(f"Generating recommendations for User: **{user_encoder.classes_[user_id]}**, based on track: **'{reference_track_name}'**...", icon="🎧")
 
     # Generate recommendations from both methods (requesting more candidates)
@@ -144,9 +137,9 @@ def hybrid_recommendation(user_id, reference_track_name, num_recommendations=10)
     return final_recommendations[:num_recommendations]
 
 
-# --- Streamlit UI ---
+#  Streamlit UI 
 
-st.title("🎧 MelodyMind: Your Hybrid Music Recommender")
+st.title("🎧 MelodyMind: Hybrid Music Recommender")
 
 st.markdown("""
 Welcome to MelodyMind! This application provides personalized music recommendations
@@ -158,7 +151,7 @@ and patterns learned from user interactions (Collaborative Filtering).
 
 st.divider()
 
-# --- Sidebar for Input ---
+#  Sidebar for Input 
 with st.sidebar:
     st.header("Configure Your Recommendations")
 
@@ -196,7 +189,7 @@ with st.sidebar:
         max_value=25,
         value=10,
         step=1,
-        help="How many song recommendations would you like? (Max 25)" # Updated help text
+        help="How many song recommendations would you like? (Max 25)" 
     )
 
     st.markdown("---")
@@ -208,7 +201,7 @@ with st.sidebar:
               st.session_state['get_recs'] = False
 
 
-# --- Display Recommendations ---
+#  Display Recommendations 
 if st.session_state['get_recs']:
     st.subheader("🔮 Your Personalized Recommendations:")
 
@@ -242,5 +235,5 @@ else:
 
 
 st.markdown("---")
-st.markdown("Built with ❤️ using LightFM and Streamlit.")
-st.markdown("Find the project notebook [here](https://www.kaggle.com/your-kaggle-notebook-link) (Replace with your actual link if on Kaggle)")
+st.markdown("Built with using LightFM and Hugging Face.")
+st.markdown("Find the project notebook [here](https://github.com/indranil143/Hybrid-Music-Recommendation-System)")
