@@ -235,5 +235,5 @@ else:
 
 
 st.markdown("---")
-st.markdown("Built with using LightFM and Hugging Face.")
+st.markdown("Built with using LightFM and Streamlit.")
 st.markdown("Find the project notebook [here](https://github.com/indranil143/Hybrid-Music-Recommendation-System)")
