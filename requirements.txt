@@ -1,4 +1,4 @@
-﻿absl-py==2.2.2
+absl-py==2.2.2
 altair==5.5.0
 annotated-types==0.7.0
 anyio==4.9.0
@@ -132,8 +132,8 @@ tinycss2==1.4.0
 tokenizers==0.21.1
 toml==0.10.2
 torch
-torchaudio==2.2.2+cpu
-torchvision==0.17.2+cpu
+torchaudio==2.2.2
+torchvision==0.17.2
 tornado==6.4.2
 tqdm==4.66.1
 traitlets==5.14.3
