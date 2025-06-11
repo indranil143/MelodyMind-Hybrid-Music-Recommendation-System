@@ -28,8 +28,6 @@ This project implements a **Hybrid Music Recommendation System** combining **Con
 
 - **Hybrid System:** Combines both methods to recommend new, niche songs (Content-Based) while leveraging user patterns (Collaborative Filtering) for enhanced accuracy.
 
-## 🚀 Getting Started
-Follow these steps to get the project up and running on your local machine.
 
 ### Dataset
 
