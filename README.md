@@ -1,7 +1,8 @@
 # **MelodyMind: Hybrid Music Recommendation System** 🎧 
 
+Welcome to the MelodyMind project repository!!   
+
 * **👉 [Live Demo (Last.fm API-Based Music Recommender)](https://hybrid-music-recommendation-system.streamlit.app/)**
-Welcome to the MelodyMind project repository!! 
 
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
 [![LightFM](https://img.shields.io/badge/Library-LightFM-orange?style=flat-square)](https://makingunconferenc.es/lightfm/)
