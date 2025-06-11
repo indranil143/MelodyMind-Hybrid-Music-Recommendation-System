@@ -1,5 +1,6 @@
-# **MelodyMind: Hybrid Music Recommendation System** 🎧  
+# **MelodyMind: Hybrid Music Recommendation System** 🎧 
 
+* **👉 [Live Demo (Last.fm API-Based Music Recommender)](https://hybrid-music-recommendation-system.streamlit.app/)**
 Welcome to the MelodyMind project repository!! 
 
 [![Python](https://img.shields.io/badge/Python-3.12%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
@@ -84,14 +85,10 @@ MelodyMind stands on the shoulders of my earlier endeavors in real-time music re
 * Real-time music discovery.
 * An interactive Streamlit web application.
 
-You can explore the previous version's live demo and source code here:
-
-* **👉 [Live Demo (Last.fm API-Based Music Recommender)](https://hybrid-music-recommendation-system.streamlit.app/)**
-* **🔗 GitHub Repository (Previous Version): [MelodyMind-Music-Recommendation-System](https://github.com/indranil143/MelodyMind-Music-Recommendation-System)**
 
 ## ⚙️ Getting Started
 
-Ready to run MelodyMind on your local machine? Follow these simple steps!
+To run MelodyMind on your local machine follow these simple steps!
 
 ### Prerequisites
 
