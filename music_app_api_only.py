@@ -191,7 +191,7 @@ else:
     Our intelligent system attempts to **recognize your intended song/artist** even with typos.
                 
     It can work with just an artist, just a track, or both!""")
-    st.info("Enter your musical starting point in the sidebar to begin your journey!", icon="👈")
+    st.info("Enter an artist or track in the sidebar and start your journey! ", icon="👈")
 
 
 st.markdown("---")
