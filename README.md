@@ -33,7 +33,7 @@ This project implements a **Hybrid Music Recommendation System** combining **Con
 
 ### Dataset
 
-Uses the Spotify Dataset 1921-2020, 160k+ Tracks.
+Uses the Spotify Dataset 1921-2020, 160k+ Tracks.   
 **Source:** [https://www.kaggle.com/datasets/fcpercival/160k-spotify-songs-sorted](https://www.kaggle.com/datasets/fcpercival/160k-spotify-songs-sorted)
 
 ### Running the Notebook
@@ -161,8 +161,10 @@ Deploying MelodyMind to [Streamlit Community Cloud](https://share.streamlit.io/)
 ## 🎮 How to Use
 
 - Simply enter an artist name, a track name, or both in the **sidebar** on the left.  
-- Adjust the "Number of Recommendations" slider to control the quantity of suggestions, then click "Get Recommendations."
-- Explore the results under the "🎵 Recommendations" tab and dive into deeper context with the "📊 Insights" tab.
+- Adjust the "Number of Recommendations" slider to control the quantity of suggestions,
+- then click "Get Recommendations."
+- Explore the results under the "🎵 Recommendations" tab,
+- and dive into deeper context with the "📊 Insights" tab.
 
 ## 🤝 Contributing
 
