@@ -197,4 +197,4 @@ else:
 st.markdown("---")
 st.markdown("Built with ❤️ using Last.fm API and Streamlit.")
 st.markdown("Find the Last.fm API documentation [here](https://www.last.fm/api).")
-st.markdown("Find the project notebook for this project [here](https://github.com/indranil143/Hybrid-Music-Recommendation-System")
+st.markdown("Find the project notebook for this project [here](https://github.com/indranil143/Hybrid-Music-Recommendation-System).")
