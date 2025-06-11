@@ -2,7 +2,7 @@
 
 Welcome to the MelodyMind project repository!! 
 
-[![Python](https://img.shields.io/badge/Python-3.7%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.12%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
 [![LightFM](https://img.shields.io/badge/Library-LightFM-orange?style=flat-square)](https://makingunconferenc.es/lightfm/)
 [![Powered by Last.fm](https://img.shields.io/badge/Powered%20by-Last.fm-E51B23?style=flat&logo=lastdotfm&logoColor=white)](https://www.last.fm/api/)
 [![Streamlit](https://img.shields.io/badge/App-Streamlit-red?style=flat-square&logo=streamlit)](https://streamlit.io/)
@@ -50,7 +50,7 @@ Execute the cells in `Hybrid_Music_Recommendation_System.ipynb` using Kaggle or 
 
 ---
 
-## 📚 Previous Project: Last.fm API-Based Recommender
+## 📚 Previous Project: Last.fm API-Based Music Recommender
 
 🚀 This application is your personal guide to discovering new music, powered by the extensive **Last.fm API**. It's crafted to offer intelligent and diverse recommendations through an intuitive Streamlit interface.
 
@@ -86,7 +86,7 @@ MelodyMind stands on the shoulders of my earlier endeavors in real-time music re
 
 You can explore the previous version's live demo and source code here:
 
-* **👉 [Live Demo (Previous Version)](https://hybrid-music-recommendation-system.streamlit.app/)**
+* **👉 [Live Demo (Last.fm API-Based Music Recommender)](https://hybrid-music-recommendation-system.streamlit.app/)**
 * **🔗 GitHub Repository (Previous Version): [MelodyMind-Music-Recommendation-System](https://github.com/indranil143/MelodyMind-Music-Recommendation-System)**
 
 ## ⚙️ Getting Started
@@ -162,7 +162,9 @@ Deploying MelodyMind to [Streamlit Community Cloud](https://share.streamlit.io/)
 
 ## 🎮 How to Use
 
-Simply enter an artist name, a track name, or both in the **sidebar** on the left. Adjust the "Number of Recommendations" slider to control the quantity of suggestions, then click "Get Recommendations." Explore the results under the "🎵 Recommendations" tab and dive into deeper context with the "📊 Insights" tab.
+- Simply enter an artist name, a track name, or both in the **sidebar** on the left.  
+- Adjust the "Number of Recommendations" slider to control the quantity of suggestions, then click "Get Recommendations."
+- Explore the results under the "🎵 Recommendations" tab and dive into deeper context with the "📊 Insights" tab.
 
 ## 🤝 Contributing
 
