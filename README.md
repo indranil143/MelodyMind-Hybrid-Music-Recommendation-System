@@ -4,6 +4,7 @@ Welcome to the MelodyMind project repository!!
 
 [![Python](https://img.shields.io/badge/Python-3.7%2B-blue?style=flat-square&logo=python)](https://www.python.org/)
 [![LightFM](https://img.shields.io/badge/Library-LightFM-orange?style=flat-square)](https://makingunconferenc.es/lightfm/)
+[![Powered by Last.fm](https://img.shields.io/badge/Powered%20by-Last.fm-E51B23?style=flat&logo=lastdotfm&logoColor=white)](https://www.last.fm/api/)
 [![Streamlit](https://img.shields.io/badge/App-Streamlit-red?style=flat-square&logo=streamlit)](https://streamlit.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat-square)](https://opensource.org/licenses/MIT)
 
@@ -30,38 +31,14 @@ This project implements a **Hybrid Music Recommendation System** combining **Con
 ## 🚀 Getting Started
 Follow these steps to get the project up and running on your local machine.
 
-### Prerequisites
+### Dataset
 
-* Python 3.9+
-* Git
-
-### Installation
-
-1.  Clone the repository:
-    ```bash
-    git clone https://github.com/indranil143/Hybrid-Music-Recommendation-System.git
-    cd MelodyMind-Hybrid-Music-Recommendation-System
-    ```
-2.  Create and activate a virtual environment:
-    ```bash
-    python -m venv venv
-    # Windows: .\venv\Scripts\activate
-    # macOS/Linux: source venv/bin/activate
-    ```
-3.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### Data
-
-Uses the Spotify Dataset 1921-2020, 160k+ Tracks (`data.csv`).
+Uses the Spotify Dataset 1921-2020, 160k+ Tracks.
 **Source:** [https://www.kaggle.com/datasets/fcpercival/160k-spotify-songs-sorted](https://www.kaggle.com/datasets/fcpercival/160k-spotify-songs-sorted)
-Ensure `data.csv` or renamed as `music_data.csv` is accessible by the notebook.
 
 ### Running the Notebook
 
-Execute the cells in `MelodyMind_Hybrid_Music_Recommendation_System.ipynb` using Kaggle or Google Colab. This trains the model and saves `music_recommender_components.pkl`.
+Execute the cells in `Hybrid_Music_Recommendation_System.ipynb` using Kaggle or Google Colab. This trains the model and saves `music_recommender_components.pkl`.
 
 ### Running the Streamlit App
 
@@ -77,23 +54,132 @@ Execute the cells in `MelodyMind_Hybrid_Music_Recommendation_System.ipynb` using
 
 ## 📚 Previous Project: Last.fm API-Based Recommender
 
-This project builds upon my earlier work that focused purely on **real-time music recommendations** using the **Last.fm API**:
+🚀 This application is your personal guide to discovering new music, powered by the extensive **Last.fm API**. It's crafted to offer intelligent and diverse recommendations through an intuitive Streamlit interface.
 
-👉 [Live Demo](https://melodymind-ai-powered-music-recommender-system-uvbgwng5xjx2tg3.streamlit.app/)  
-🔗 GitHub: [MelodyMind-Music-Recommendation-System](https://github.com/indranil143/MelodyMind-Music-Recommendation-System)
+## ✨ Project Overview
 
-That version offered:
--  **Dynamic song suggestions** based on user input (song & artist)  
--  **Real-time music discovery** via Last.fm API  
--  **Streamlit web app** for an interactive user experience  
+MelodyMind isn't just another music recommender; it's a **hybrid system** that intelligently blends various data points from Last.fm to unearth unique music tailored to your taste. Whether you provide an artist, a specific track, or both, MelodyMind digs deep to find your next favorite song. Its hybrid approach ensures you get a broad spectrum of suggestions, moving beyond simple direct similarities to explore connected artists and genres.
+
+## 🌟 Key Features
+
+* **Intelligent Input Handling**: Smartly processes your artist and track inputs, with built-in auto-correction for common typos, ensuring you always find what you're looking for.
+* **Diverse Recommendation Strategies**:
+    * **Track-Focused**: Discover songs similar to a given track, expanding your playlist effortlessly.
+    * **Artist-Centric**: Explore the top hits from your favorite artists or discover new tracks from artists you'll love.
+    * **Contextual Hybridization**: When direct matches are scarce, the system intelligently broadens its search to include top tracks from similar artists and songs associated with relevant genres, providing richer recommendations.
+* **Comprehensive Insights**: Dive deeper into the music with detailed information about recommended artists and tracks, including their top tags and concise summaries.
+* **Sleek User Interface**: Enjoy a smooth and responsive experience thanks to the interactive Streamlit web application.
+* **Instant Access**: Direct links to Last.fm enable you to listen to recommended tracks immediately.
+
+## 💻 Technology Stack
+
+* **Python**: The robust foundation for all logic and data processing.
+* **Streamlit**: For creating a beautiful, interactive, and easy-to-use web application.
+* **Requests**: Handles all HTTP communications with the Last.fm API.
+* **Last.fm API**: The rich data source powering the music recommendations.
+
+## 📖 Building Upon Previous Work
+
+MelodyMind stands on the shoulders of my earlier endeavors in real-time music recommendations. That foundational project, also utilizing the Last.fm API, offered:
+
+* Dynamic song suggestions based on user song and artist inputs.
+* Real-time music discovery.
+* An interactive Streamlit web application.
+
+You can explore the previous version's live demo and source code here:
+
+* **👉 [Live Demo (Previous Version)](https://hybrid-music-recommendation-system.streamlit.app/)**
+* **🔗 GitHub Repository (Previous Version): [MelodyMind-Music-Recommendation-System](https://github.com/indranil143/MelodyMind-Music-Recommendation-System)**
+
+## ⚙️ Getting Started
+
+Ready to run MelodyMind on your local machine? Follow these simple steps!
+
+### Prerequisites
+
+* Python 3.12 (highly recommended for best compatibility)
+* [Git](https://git-scm.com/downloads)
+* A [Last.fm API Key](https://www.last.fm/api/account/create) – essential for accessing music data.
+
+### Local Installation
+
+1.  **Clone the Repository:**
+
+    ```bash
+    git clone [https://github.com/indranil143/Hybrid-Music-Recommendation-System.git](https://github.com/indranil143/Hybrid-Music-Recommendation-System.git)
+    cd Hybrid-Music-Recommendation-System
+    ```
+
+2.  **Create a Virtual Environment (Highly Recommended):**
+
+    ```bash
+    python -m venv venv
+    # On Windows:
+    .\venv\Scripts\activate
+    # On macOS/Linux:
+    source venv/bin/activate
+    ```
+
+3.  **Install Dependencies:**
+    Ensure your `requirements.txt` file is present in the current directory.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Set Your Last.fm API Key:**
+    The application needs your Last.fm API Key to function. Set it as an environment variable:
+
+    * **For Windows (Command Prompt):**
+        ```cmd
+        set LASTFM_API_KEY="YOUR_ACTUAL_LASTFM_API_KEY"
+        ```
+    * **For Windows (PowerShell):**
+        ```powershell
+        $env:LASTFM_API_KEY="YOUR_ACTUAL_LASTFM_API_KEY"
+        ```
+    * **For macOS/Linux (Bash/Zsh):**
+        ```bash
+        export LASTFM_API_KEY="YOUR_ACTUAL_LASTFM_API_KEY"
+        ```
+    * **Remember to replace `YOUR_ACTUAL_LASTFM_API_KEY`** with the key you obtained from Last.fm. For persistent local development, consider using a `.env` file with the `python-dotenv` package.
+
+5.  **Run the Streamlit App:**
+
+    ```bash
+    streamlit run music_app_api_only.py
+    ```
+
+    Your web browser should automatically open the MelodyMind application.
+
+## ☁️ Deployment to Streamlit Community Cloud
+
+Deploying MelodyMind to [Streamlit Community Cloud](https://share.streamlit.io/) is straightforward:
+
+1.  **GitHub Repository**: Your project must be hosted on a public GitHub repository.
+2.  **`requirements.txt`**: Ensure this file is located in the same directory as `music_app_api_only.py`. It should accurately list all project dependencies and avoid platform-specific packages (like `pywin32`) or problematic `+cpu` PyTorch/Torchaudio versions, as these can cause deployment issues.
+3.  **API Key as Secret**: Securely store your `LASTFM_API_KEY` in the Streamlit Community Cloud dashboard's secrets. Go to your app settings, then "Advanced settings," and finally "Secrets," adding the following:
+    ```toml
+    LASTFM_API_KEY="YOUR_ACTUAL_LASTFM_API_KEY_HERE"
+    ```
+
+## 🎮 How to Use
+
+Simply enter an artist name, a track name, or both in the **sidebar** on the left. Adjust the "Number of Recommendations" slider to control the quantity of suggestions, then click "Get Recommendations." Explore the results under the "🎵 Recommendations" tab and dive into deeper context with the "📊 Insights" tab.
+
+## 🤝 Contributing
+
+Feel free to contribute to this project by opening issues or submitting pull requests!!
+
+
+Built with ❤️ using Last.fm API and Streamlit.
+Find the Last.fm API documentation [here](https://www.last.fm/api).
 
 
 ## 📄 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-Feel free to contribute to this project by opening issues or submitting pull requests!!
-
+---
 
 
 
