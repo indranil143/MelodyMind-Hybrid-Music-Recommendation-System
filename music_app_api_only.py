@@ -132,7 +132,7 @@ def display_insights(basis):
 
 #  Main App Logic 
 load_css()
-st.title("🎧 MelodyMind: Advanced API Music Recommender")
+st.title("🎧 MelodyMind: Music Recommender")
 
 # Initialize session state for app flow
 if 'recommendations' not in st.session_state:
