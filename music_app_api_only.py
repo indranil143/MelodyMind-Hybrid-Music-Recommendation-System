@@ -11,7 +11,7 @@ from genre_assets import get_genre_image_url
 
 # Page Configuration and Styling 
 st.set_page_config(
-    page_title="MelodyMind: Advanced Music Recommender 🎵",
+    page_title="MelodyMind: Music Recommender 🎵",
     page_icon="🎶",
     layout="wide"
 )
